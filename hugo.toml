@@ -16,7 +16,7 @@ buildExpired = false
 [params]
   env = 'production'
   description = "Writing, notes, and things I'm working on."
-  author = 'KC'
+  author = 'Isaid22'
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowShareButtons = false
@@ -30,7 +30,7 @@ buildExpired = false
   hidemeta = false
 
   [params.homeInfoParams]
-    Title = "Hi, I'm KC 👋"
+    Title = "Hi, I'm writing for pleasure 👋"
     Content = "This is where I write things, keep notes on what I'm doing, and think out loud."
 
   [[params.socialIcons]]
