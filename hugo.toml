@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = "KC's Notebook"
+title = "My Notebook"
 theme = 'PaperMod'
 
 pagination.pagerSize = 10
