@@ -39,7 +39,7 @@ fingerprintAlgorithm = "sha256"
   showTableOfContents = true
   showTaxonomies = true
   showWordCount = false
-  showComments = false
+  showComments = true
 
 [list]
   showBreadcrumbs = true
