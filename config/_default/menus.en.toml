@@ -1,0 +1,20 @@
+[[main]]
+  name = "Writing"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Notes"
+  pageRef = "notes"
+  weight = 20
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 30
+
+[[main]]
+  identifier = "search"
+  weight = 40
+  [main.params]
+    action = "search"
