@@ -1,4 +1,4 @@
-baseURL = 'https://kaizen.shinchan75034.workers.dev/'
+baseURL = 'https://kaizen.shokunin-ikigai.workers.dev/'
 languageCode = 'en-us'
 title = "My Notebook"
 theme = 'PaperMod'
