@@ -1,3 +1,11 @@
++++
+title = 'CUDA Matrix Multiplication: Thread Indexing & Tiling'
+date = 2026-09-13T00:00:00-05:00
+draft = false
+tags = ['cuda', 'gpu']
+summary = 'How CUDA thread indexing works and why shared-memory tiling speeds up matrix multiplication.'
++++
+
 # CUDA Matrix Multiplication: Thread Indexing & Tiling
 
 ## 1. How `row` and `col` start at 0
