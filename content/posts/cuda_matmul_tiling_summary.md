@@ -6,8 +6,6 @@ tags = ['cuda', 'gpu']
 summary = 'How CUDA thread indexing works and why shared-memory tiling speeds up matrix multiplication.'
 +++
 
-# CUDA Matrix Multiplication: Thread Indexing & Tiling
-
 ## 1. How `row` and `col` start at 0
 
 In the naive kernel:

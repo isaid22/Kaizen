@@ -6,8 +6,6 @@ tags = ['cuda', 'gpu']
 summary = 'A practical guide to how CUDA memory hierarchy works.'
 +++
 
-# CUDA Memory Hierarchy: A Practical Guide
-
 ## `cudaMalloc` Allocates Only One Kind of Memory
 
 `cudaMalloc` **always allocates device global memory** (also called **device memory** or **off-chip GDDR/HBM memory**). It does **not** let you choose which level of the memory hierarchy to use.
