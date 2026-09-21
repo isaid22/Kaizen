@@ -1,0 +1,32 @@
+{{ if .Params.katex }}
+  {{ $katexCSS := resources.Get "lib/katex/katex.min.css" }}
+  {{ $katexCSS := $katexCSS | resources.Fingerprint "sha256" }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $katexCSS.Permalink }}"
+    integrity="{{ $katexCSS.Data.Integrity }}"
+  />
+  {{ $katexJS := resources.Get "lib/katex/katex.min.js" }}
+  {{ $katexJS := $katexJS | resources.Fingerprint "sha256" }}
+  <script defer src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
+  {{ $katexRenderJS := resources.Get "lib/katex/auto-render.min.js" }}
+  {{ $katexRenderJS := $katexRenderJS | resources.Fingerprint "sha256" }}
+  <script
+    defer
+    src="{{ $katexRenderJS.Permalink }}"
+    integrity="{{ $katexRenderJS.Data.Integrity }}"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });"
+  ></script>
+  {{ range resources.Match "lib/katex/fonts/*" }}
+    {{ .Publish }}
+  {{ end }}
+{{ end }}

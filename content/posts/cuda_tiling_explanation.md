@@ -4,6 +4,7 @@ date = 2026-09-21T00:00:00-05:00
 draft = false
 tags = ['cuda', 'gpu']
 summary = 'How tiling reduces global memory bandwidth in CUDA matrix multiplication by loading sub-blocks into shared memory.'
+katex = true
 +++
 
 # Tiled Matrix Multiplication in CUDA
