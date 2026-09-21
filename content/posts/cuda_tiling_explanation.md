@@ -1,3 +1,11 @@
++++
+title = 'Tiled Matrix Multiplication in CUDA'
+date = 2026-09-21T00:00:00-05:00
+draft = false
+tags = ['cuda', 'gpu']
+summary = 'How tiling reduces global memory bandwidth in CUDA matrix multiplication by loading sub-blocks into shared memory.'
++++
+
 # Tiled Matrix Multiplication in CUDA
 
 Tiling is an optimization technique used in CUDA kernel development to reduce global memory bandwidth bottlenecks. By loading sub-blocks (tiles) of matrices into high-speed **shared memory**, threads within a block can reuse data multiple times rather than repeatedly querying slow global GPU memory.
