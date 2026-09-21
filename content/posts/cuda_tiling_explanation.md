@@ -115,7 +115,7 @@ Comparing the total memory accesses:
 
 $$\text{Speedup Factor} = \frac{A_{\text{naive}}}{A_{\text{tiled}}} = \frac{2N^3}{\frac{2N^3}{T}} = T = \text{TILE\_WIDTH}$$
 
-Thus, tiling mathematically reduces global memory reads from $\mathcal{O}(N^3)$ down to $\mathcal{O}\left(\frac{N^3}{\text{TILE\_WIDTH}}\right)$.
+Thus, tiling mathematically reduces global memory reads from $\mathcal{O}(N^3)$ down to $\mathcal{O}\left(\frac{N^3}{T}\right)$, where $T$ is the tile width (`TILE_WIDTH`).
 
 ### Numerical Walkthrough ($N = 1024, T = 32$)
 
