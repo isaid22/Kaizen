@@ -69,7 +69,7 @@ __global__ void matmul_tiled(float* C, const float* A, const float* B, int M, in
 To make the calculations easy to follow, let us consider a concrete example:
 
 * Matrix dimensions: $M = 1024$, $N = 1024$, $K = 1024$
-* Tile width: $TILE\_WIDTH = 32$ (giving a tile size of $32 \times 32$)
+* Tile width: `TILE_WIDTH = 32` (giving a tile size of $32 \times 32$)
 
 With this configuration:
 
@@ -79,7 +79,7 @@ With this configuration:
 
 ## Formal Proof: Reduction in Memory Access Complexity
 
-To prove why global memory access complexity drops from $\mathcal{O}(N^3)$ to $\mathcal{O}\left(\frac{N^3}{T}\right)$, assume square matrices where $M = N = K$ and tile width $TILE\_WIDTH = T$.
+To prove why global memory access complexity drops from $\mathcal{O}(N^3)$ to $\mathcal{O}\left(\frac{N^3}{T}\right)$, assume square matrices where $M = N = K$ and tile width `TILE_WIDTH = T`.
 
 ### 1. Naïve Matrix Multiplication (No Tiling)
 
@@ -113,9 +113,9 @@ In tiled execution, global memory reads occur at the thread-block level rather t
 
 Comparing the total memory accesses:
 
-$$\text{Speedup Factor} = \frac{A_{\text{naive}}}{A_{\text{tiled}}} = \frac{2N^3}{\frac{2N^3}{T}} = T = TILE\_WIDTH$$
+$$\text{Speedup Factor} = \frac{A_{\text{naive}}}{A_{\text{tiled}}} = \frac{2N^3}{\frac{2N^3}{T}} = T = \text{TILE\_WIDTH}$$
 
-Thus, tiling mathematically reduces global memory reads from $\mathcal{O}(N^3)$ down to $\mathcal{O}\left(\frac{N^3}{TILE\_WIDTH}\right)$.
+Thus, tiling mathematically reduces global memory reads from $\mathcal{O}(N^3)$ down to $\mathcal{O}\left(\frac{N^3}{\text{TILE\_WIDTH}}\right)$.
 
 ### Numerical Walkthrough ($N = 1024, T = 32$)
 
