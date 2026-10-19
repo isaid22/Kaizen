@@ -1,6 +1,19 @@
++++
+title = 'Bell-State Circuit: A Qubit Journey into Entanglement'
+date = 2026-10-19T00:00:00-05:00
+draft = false
+tags = ['quantum-computing', 'bell-state', 'entanglement']
+summary = 'Follow a two-qubit circuit through initialization, a Hadamard gate, and CNOT to understand how a separable state becomes an entangled Bell state.'
+katex = true
++++
+
 # Bell-State Circuit: Derivation and Refined Notes
 
-This summary explains how a Bell-state circuit creates quantum entanglement. We will follow the two qubits through time—their “qubit journey”—and examine how the circuit’s quantum state evolves at three stages: $t_0$, before any gates are applied; $t_1$, after the Hadamard gate; and $t_2$, after CNOT. This step-by-step analysis shows how an initially separable state becomes an entangled Bell state.
+This summary explains how a Bell-state circuit creates quantum entanglement. 
+
+## 0. Approach
+
+We will follow the two qubits through time—their “qubit journey”—and examine how the circuit’s quantum state evolves at three stages: $t_0$, before any gates are applied; $t_1$, after the Hadamard gate; and $t_2$, after CNOT. This step-by-step analysis shows how an initially separable state becomes an entangled Bell state.
 
 ![Bell-state circuit with dotted lines marking t0, t1, and t2](Bell-State-Circuit.svg)
 
