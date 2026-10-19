@@ -135,10 +135,10 @@ Here $\oplus$ means XOR (addition modulo two).
 
 | Input | Output | Output vector |
 |---|---|---|
-| $|00\rangle$ | $|00\rangle$ | $(1,0,0,0)^T$ |
-| $|01\rangle$ | $|01\rangle$ | $(0,1,0,0)^T$ |
-| $|10\rangle$ | $|11\rangle$ | $(0,0,0,1)^T$ |
-| $|11\rangle$ | $|10\rangle$ | $(0,0,1,0)^T$ |
+| $\lvert 00\rangle$ | $\lvert 00\rangle$ | $(1,0,0,0)^T$ |
+| $\lvert 01\rangle$ | $\lvert 01\rangle$ | $(0,1,0,0)^T$ |
+| $\lvert 10\rangle$ | $\lvert 11\rangle$ | $(0,0,0,1)^T$ |
+| $\lvert 11\rangle$ | $\lvert 10\rangle$ | $(0,0,1,0)^T$ |
 
 The matrix columns are the output vectors for the corresponding input basis states:
 
