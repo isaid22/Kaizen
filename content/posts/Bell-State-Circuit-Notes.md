@@ -15,7 +15,10 @@ This summary explains how a Bell-state circuit creates quantum entanglement.
 
 We will follow the two qubits through time—their “qubit journey”—and examine how the circuit’s quantum state evolves at three stages: $t_0$, before any gates are applied; $t_1$, after the Hadamard gate; and $t_2$, after CNOT. This step-by-step analysis shows how an initially separable state becomes an entangled Bell state.
 
-![Bell-state circuit with dotted lines marking t0, t1, and t2](Bell-State-Circuit.svg)
+Then I need to use this in markdown
+
+![Bell-state circuit with dotted lines marking t0, t1, and t2](/images/Bell-State-Circuit.svg)
+
 
 ## 1. Circuit and conventions
 
