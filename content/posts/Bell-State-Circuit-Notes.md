@@ -73,8 +73,7 @@ $$
 \begin{pmatrix}a\\b\end{pmatrix}
 \otimes
 \begin{pmatrix}c\\d\end{pmatrix}
-=
-\begin{pmatrix}ac\\ad\\bc\\bd\end{pmatrix}.
+=\begin{pmatrix}ac\\ad\\bc\\bd\end{pmatrix}.
 $$
 
 ## 3. At $t_1$: Hadamard on $q_0$
